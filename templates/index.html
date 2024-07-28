@@ -1,0 +1,204 @@
+{% extends "layout.html" %} {% block title %} Homepage {% endblock %} {% block
+main %}
+
+<main>
+  <div class="container mt-3">
+    <!-- first section introduce -->
+    <div class="row up-col">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 col-12 text-center mid-col">
+        <div>
+          <h1><strong>Fall in Love with Fukuoka:</strong></h1>
+          <h2 class="mt-sm-4">
+            Book Your Dream <br />Trip with <span style="color: #0077b6">O</span
+            ><span style="color: #6b8e23">U</span
+            ><span style="color: #ffa726">S</span>
+          </h2>
+        </div>
+        <img src="https://i.ibb.co/gJ5K5b1/sakura.jpg" alt="sakura flower" />
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+
+    <!-- second advertisement -->
+    <div class="row middle-col">
+      <div class="col-sm-4 d-none d-sm-block">
+        <img src="https://i.ibb.co/1RQTn4q/flowe1.png" alt="sakura flower" />
+      </div>
+      <div class="col-sm-8 col-12 ps-2 mt-ms-5">
+        <h2>
+          <strong
+            >Craft Your Dream Getaway with <span style="color: #0077b6">O</span
+            ><span style="color: #6b8e23">U</span
+            ><span style="color: #ffa726">S</span>!</strong
+          >
+        </h2>
+        <h4>Choose from two flexible options:</h4>
+        <div class="d-none d-sm-block">
+          <h3 class="mt-4"><strong>Central Trip:</strong></h3>
+          <h4 class="mt-3">
+            Our 6+ day adventures immerse you in Fukuoka’s culture, cuisine, and
+            landscapes.
+          </h4>
+          <h3 class="mt-4"><strong>Extra Trip:</strong></h3>
+          <h4 class="mt-3">
+            This short escape offers unforgettable moments that leave you happy
+            and connected.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trip opiton -->
+    <div class="row end-col">
+      <div class="col-sm-10 col-12">
+        <div class="end-first-col">
+          <h3><strong>Central Trip</strong></h3>
+          <a href="/central_trip"
+            >Unlock the Adventure
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-navigation"
+            >
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+          </a>
+        </div>
+
+        <!-- ---------------- main trip ---------------- -->
+        <div class="end-sec-col">
+          <button class="pre-btn">
+            <img
+              src="https://i.ibb.co/3mR5BCK/arrow-back.png"
+              style="width: 24px"
+              alt="arrow back"
+            />
+          </button>
+          <div class="product-container">
+            <div class="product-card me-5" id="column1">
+              <img
+                src="https://i.ibb.co/VwY6Rw5/beppu.png"
+                alt="beppu"
+                style="width: 100%"
+              />
+              <div class="show-price">
+                <div>
+                  <h4 style="opacity: 0.8">
+                    <strong>
+                      Unwind in Beppu: <br class="d-block d-block" />Japan's Hot
+                      Spring Paradise
+                    </strong>
+                  </h4>
+                  <p>Sooth Your Soul and Recharge Your Spirit</p>
+                </div>
+                <p class="mt-4 d-none d-sm-block">$ 1,599.00</p>
+              </div>
+            </div>
+            <div class="product-card" id="column2">
+              <img
+                src="https://i.ibb.co/3TK8rBS/nagasaki.png"
+                alt="Peace Statue"
+                style="width: 100%"
+              />
+              <div class="show-price">
+                <div>
+                  <h4 style="opacity: 0.8">
+                    <strong
+                      >Nagasaki: <br class="d-block d-block" />Where Hope Blooms
+                      Again</strong
+                    >
+                  </h4>
+                  <p>Explore a City of Peace, History, and Renewal</p>
+                </div>
+                <p class="mt-4 d-none d-sm-block">$ 1,448.00</p>
+              </div>
+            </div>
+          </div>
+          <button class="nxt-btn">
+            <img
+              src="https://i.ibb.co/Jjtbv5x/arrow-forward.png"
+              style="width: 24px"
+              alt="arrow forward"
+            />
+          </button>
+        </div>
+
+        <!-- ---------------- side trip ---------------- -->
+        <div class="end-first-col mt-sm-5 mt-5 mb-4">
+          <h3><strong>Extra Trip</strong></h3>
+          <a href="/extra_trip">
+            More Tours
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-navigation"
+            >
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+          </a>
+        </div>
+        <div style="display: flex" class="ex-trips">
+          <div class="d-none d-sm-block">
+            <p>
+              • <strong>Karatsu:</strong> Immerse Yourself in History & Savor
+              Sunset Delights view
+            </p>
+            <p>
+              • <strong>Saga:</strong> Witness the Magic of the Saga Balloon
+              Festival entirety
+            </p>
+            <p>
+              • <strong>Miyazaki:</strong> Unwind on Southern Shores & Savor
+              Black Chicken Delicacy
+            </p>
+            <p>
+              • <strong>Miyama:</strong> Harvest the Bounty: Fresh Oranges &
+              Scenic Escape
+            </p>
+          </div>
+          <div class="d-sm-none text-mob" style="width: 400px">
+            <p>
+              • <strong>Karatsu:</strong> <br />
+              Yourself in History
+            </p>
+            <p>• <strong>Saga:</strong> <br />Balloon Festival entirety</p>
+            <p>
+              • <strong>Miyazaki:</strong> <br />Savor Black Chicken Delicacy
+            </p>
+            <p>• <strong>Miyama:</strong> <br />Fresh Oranges</p>
+          </div>
+          <div class="ms-sm-5 ms-1">
+            <img src="https://i.ibb.co/94kmDm4/balloon.png" alt="balloon" />
+            <img
+              src="https://i.ibb.co/MMN78W0/orange.png"
+              alt="orange"
+              class="ms-sm-3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- picture col -->
+      <div class="col-sm-2 d-none d-sm-block castle">
+        <img src="https://i.ibb.co/XVkjVpb/castle.png" alt="japan castle" />
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,1082 @@
+.profile .show_details button, .login form button, .register form button, .extra-trip button, .central-trip #nagasaki_plus_booking form button, .central-trip #nagasaki_booking form button, .central-trip #beppu_plus_booking form button, .central-trip #beppu_booking form button, .central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .purchase, .central-trip .third-col-center .beppu-center #plusBeppu button, .central-trip .third-col-center .beppu-center .third-collapseBeppu .purchase, nav button {
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.login form input, .register form div input {
+  border: none;
+  text-align: center;
+  outline: none;
+  border-bottom: 2px solid #0077b6;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #ffa726;
+}
+
+nav {
+  font-family: "Courier New", sans-serif;
+}
+nav #logo {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav #name {
+  font-size: 16px;
+}
+nav #name span {
+  font-size: 30px;
+}
+nav button {
+  background-color: #fffff0;
+  border: 1px solid #6b8e23;
+}
+nav button:hover {
+  background-color: #d1c4e9;
+  border: 1px solid #d1c4e9;
+}
+
+main .up-col img {
+  margin-left: 20rem;
+  width: 450px;
+  border-radius: 20px;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.5;
+}
+main .up-col .mid-col {
+  display: flex;
+}
+main .up-col .mid-col div {
+  position: absolute;
+  text-align: left;
+  margin-top: 10rem;
+}
+main .up-col .mid-col h1 {
+  font: 3em monospace;
+  width: 100%;
+}
+main .up-col .mid-col h2 {
+  font-family: "Courier New", sans-serif;
+}
+main .up-col .mid-col h2 span {
+  font-family: "Aldrich", sans-serif;
+}
+main .middle-col {
+  font-family: "Courier New", sans-serif;
+}
+main .middle-col img {
+  position: relative;
+  top: -2rem;
+  width: 100%;
+  border-radius: 20px;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.9;
+}
+main .middle-col h2 {
+  margin-top: 6rem;
+  font: 2em monospace;
+}
+main .middle-col h2 span {
+  font-family: "Aldrich", sans-serif;
+}
+main .middle-col h3 {
+  font-size: 30px;
+  opacity: 0.7;
+}
+main .middle-col h4 {
+  font-size: 16px;
+  opacity: 0.6;
+}
+main .end-col {
+  font-family: "Courier New", sans-serif;
+}
+main .end-col .end-first-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+main .end-col .end-first-col a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #0077b6;
+}
+main .end-col .end-sec-col {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+}
+main .end-col .end-sec-col h3 {
+  font-family: monospace;
+}
+main .end-col .end-sec-col button {
+  background: none;
+  border: none;
+}
+main .end-col .end-sec-col button img {
+  transition: transform 0.3s ease;
+}
+main .end-col .end-sec-col button img:hover {
+  opacity: 1;
+  transform: scale(2);
+}
+main .end-col .end-sec-col div img {
+  object-fit: cover;
+  height: 120px;
+  border-radius: 10px;
+}
+main .end-col .end-sec-col .product-container {
+  flex: 1;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 275px;
+  overflow: hidden;
+}
+main .end-col .end-sec-col .product-container .product-card {
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: transform 0.5s ease;
+  border-bottom: 2px solid #d1c4e9;
+}
+main .end-col .end-sec-col .product-container .product-card .show-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 1rem 0 1.5rem;
+}
+main .end-col .end-sec-col .product-container #column2 {
+  transform: translateX(100%);
+  display: block;
+}
+main .end-col .ex-trips img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+main .end-col .ex-trips p strong {
+  color: #000;
+}
+main .end-col .castle img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: -5rem;
+  margin-bottom: 4.5rem;
+}
+
+.central-trip {
+  font-family: "Courier New", sans-serif;
+  font-size: 17px;
+  line-height: 32px;
+}
+.central-trip .sec-col-center {
+  margin: 8rem 0;
+}
+.central-trip .day-n {
+  writing-mode: vertical-rl;
+  color: #d1c4e9;
+  padding-top: 1rem;
+}
+.central-trip .logo {
+  font-family: "Aldrich", sans-serif;
+}
+.central-trip .first-col-center {
+  color: #fffff0;
+}
+.central-trip .first-col-center h2 {
+  font-family: monospace;
+  padding-top: 15rem;
+  font-size: 4rem;
+}
+.central-trip .first-col-center p {
+  font-family: "Courier New", sans-serif;
+  font-size: 2rem;
+}
+.central-trip .first-col-center div {
+  font-family: monospace;
+  background-image: url("https://i.ibb.co/M6fxjhy/dazaifu.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 830px;
+  animation: expandBackground 20s ease forwards;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+@keyframes expandBackground {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 125%;
+  }
+}
+.central-trip .third-col-center .beppu-center button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+.central-trip .third-col-center .beppu-center .beppu-center-intro {
+  border-bottom: 1px solid #ffa726;
+}
+.central-trip .third-col-center .beppu-center .first-collapseBeppu {
+  border-bottom: 1px solid #ffa726;
+}
+.central-trip .third-col-center .beppu-center .sec-collapseBeppu {
+  border-bottom: 1px solid #ffa726;
+}
+.central-trip .third-col-center .beppu-center .third-collapseBeppu {
+  border-bottom: 1px solid #ffa726;
+}
+.central-trip .third-col-center .beppu-center .third-collapseBeppu .purchase {
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+  color: #fffff0;
+  font-size: 12px;
+}
+.central-trip .third-col-center .beppu-center .third-collapseBeppu .purchase a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #fffff0;
+}
+.central-trip .third-col-center .beppu-center #plusBeppu button {
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+  color: #fffff0;
+  font-size: 12px;
+}
+.central-trip .third-col-center .beppu-center #plusBeppu button a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #fffff0;
+}
+.central-trip .third-col-center img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.central-trip .fourth-col-center .nagasaki-center button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+.central-trip .fourth-col-center .nagasaki-center .nagasaki-center-intro {
+  border-bottom: 1px solid #0077b6;
+}
+.central-trip .fourth-col-center .nagasaki-center .first-collapseNagasaki {
+  border-bottom: 1px solid #0077b6;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .first-collapseNagasaki img {
+  height: 125px;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .sec-one-collapseNagasaki {
+  border-bottom: 1px solid #0077b6;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .sec-one-collapseNagasaki img {
+  margin-bottom: 2rem;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .third-collapseNagasaki {
+  border-bottom: 1px solid #0077b6;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .third-collapseNagasaki img {
+  height: 125px;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .purchase {
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+  color: #fffff0;
+  font-size: 12px;
+}
+.central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .purchase a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #fffff0;
+}
+.central-trip .fourth-col-center img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.central-trip #beppu_booking form button {
+  color: #fffff0;
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+  width: 100%;
+  font-size: 16px;
+}
+.central-trip #beppu_plus_booking form button {
+  color: #fffff0;
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+  width: 100%;
+  font-size: 16px;
+}
+.central-trip #beppu_plus_booking form button a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #fffff0;
+}
+.central-trip #nagasaki_booking form button {
+  color: #fffff0;
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+  width: 100%;
+  font-size: 16px;
+}
+.central-trip #nagasaki_plus_booking form button {
+  color: #fffff0;
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+  width: 100%;
+  font-size: 16px;
+}
+
+.extra-trip {
+  font-family: "Courier New", sans-serif;
+  font-size: 17px;
+  line-height: 32px;
+}
+.extra-trip a {
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #fffff0;
+}
+.extra-trip .logo {
+  font-family: "Aldrich", sans-serif;
+}
+.extra-trip .first-col-extra h3 {
+  font-family: monospace;
+  font-size: 26px;
+}
+.extra-trip .first-col-extra p {
+  font-family: "Courier New", sans-serif;
+  font-size: 20px;
+}
+.extra-trip .first-col-extra img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.extra-trip .first-col-extra div div div {
+  display: flex;
+}
+.extra-trip .first-col-extra div div .top-miyama {
+  margin-top: 5px;
+  margin-left: 5rem;
+}
+.extra-trip .sec-col-extra {
+  margin: 7rem 0 8rem 0;
+}
+.extra-trip .sec-col-extra h4 {
+  font-family: monospace;
+  font-size: 2.92rem;
+}
+.extra-trip .yakushima-col-extra {
+  margin: 4rem 0 8rem 0;
+}
+.extra-trip .yakushima-col-extra button {
+  background-color: #6b8e23;
+  border: 1px solid #6b8e23;
+}
+.extra-trip .yakushima-col-extra img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.extra-trip .yakushima-col-extra .first-part {
+  border-bottom: 1px solid #6b8e23;
+}
+.extra-trip .yakushima-col-extra .sec-part {
+  line-height: 24px;
+}
+.extra-trip .yakushima-col-extra .img-sec img {
+  height: 135px;
+}
+.extra-trip #yakushima_booking form button {
+  background-color: #6b8e23;
+  border: 1px solid #6b8e23;
+  width: 100%;
+  font-size: 16px;
+}
+.extra-trip #miyazaki_booking form button {
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+  width: 100%;
+  font-size: 16px;
+}
+.extra-trip #miyama_booking form button {
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+  width: 100%;
+  font-size: 16px;
+}
+.extra-trip #karatsu_booking form button {
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+  width: 100%;
+  font-size: 16px;
+}
+.extra-trip #saga_booking form button {
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+  width: 100%;
+  font-size: 16px;
+}
+.extra-trip .miyazaki-col-extra {
+  margin-bottom: 8.5rem;
+}
+.extra-trip .miyazaki-col-extra img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.extra-trip .miyazaki-col-extra button {
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+}
+.extra-trip .miyazaki-col-extra .first-part {
+  border-bottom: 1px solid #0077b6;
+}
+.extra-trip .miyazaki-col-extra .img-sec img {
+  height: 135px;
+}
+.extra-trip .miyama-col-extra {
+  margin-bottom: 8.5rem;
+}
+.extra-trip .miyama-col-extra img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.extra-trip .miyama-col-extra button {
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+}
+.extra-trip .miyama-col-extra .first-part {
+  border-bottom: 1px solid #ffa726;
+}
+.extra-trip .miyama-col-extra .img-sec img {
+  height: 135px;
+}
+.extra-trip .karatsu-col-extra {
+  margin-bottom: 8.5rem;
+}
+.extra-trip .karatsu-col-extra img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.extra-trip .karatsu-col-extra button {
+  background-color: #0077b6;
+  border: 1px solid #0077b6;
+}
+.extra-trip .karatsu-col-extra .first-part {
+  border-bottom: 1px solid #0077b6;
+}
+.extra-trip .karatsu-col-extra .img-sec img {
+  height: 135px;
+}
+.extra-trip .saga-col-extra {
+  margin-bottom: 4rem;
+}
+.extra-trip .saga-col-extra img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.extra-trip .saga-col-extra button {
+  background-color: #ffa726;
+  border: 1px solid #ffa726;
+}
+.extra-trip .saga-col-extra .first-part {
+  border-bottom: 1px solid #ffa726;
+}
+.extra-trip .saga-col-extra .img-sec img {
+  height: 135px;
+}
+.extra-trip button {
+  color: #fffff0;
+  font-size: 12px;
+}
+
+.register {
+  font-family: "Courier New", sans-serif;
+  margin: 4rem 0;
+}
+.register h2 {
+  font-family: monospace;
+}
+.register h2 span {
+  font-family: "Aldrich", sans-serif;
+}
+.register form {
+  margin-top: 5rem;
+}
+.register form div p {
+  color: #d1c4e9;
+}
+.register form div .explain-p {
+  font-size: 20px;
+}
+.register form div .explain-p span {
+  font-family: "Aldrich", sans-serif;
+}
+.register form div h3 span {
+  font-family: "Aldrich", sans-serif;
+}
+.register form div input:focus {
+  border-bottom-color: #ffa726;
+  outline: none;
+}
+.register form div input::placeholder {
+  font-family: "Courier New", sans-serif;
+  font-size: 1.5rem;
+}
+.register form button {
+  color: #fffff0;
+  background-color: #0077b6;
+  border: 1px solid #fffff0;
+  padding: 10px 2.5rem;
+}
+.register form button:hover {
+  background-color: #fffff0;
+  border: 1px solid #ffa726;
+  color: #ffa726;
+}
+.register .problem-text {
+  font-size: 1.5rem;
+  margin-bottom: -2rem;
+  border-bottom: 2px solid;
+  color: #E57373;
+}
+
+.login {
+  font-family: "Courier New", sans-serif;
+  margin: 9rem 0;
+}
+.login h2 {
+  font-family: monospace;
+  font-size: 3.3rem;
+}
+.login h2 span {
+  font-family: "Aldrich", sans-serif;
+}
+.login div p {
+  font-size: 1.2rem;
+}
+.login div span {
+  font-family: "Aldrich", sans-serif;
+}
+.login form {
+  margin-top: 5rem;
+}
+.login form .problem-text p {
+  font-size: 1.3rem;
+  border-bottom: 2px solid;
+  color: #E57373;
+}
+.login form p {
+  margin-top: 2rem;
+  color: #ffa726;
+}
+.login form input:focus {
+  border-bottom-color: #ffa726;
+}
+.login form button {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  color: #fffff0;
+  background-color: #0077b6;
+  border: 1px solid #fffff0;
+}
+.login form button:hover {
+  background-color: #fffff0;
+  border: 1px solid #ffa726;
+  color: #ffa726;
+}
+
+.profile {
+  font-family: "Courier New", sans-serif;
+}
+.profile h2 {
+  font-size: 2rem;
+}
+.profile .img_intro {
+  margin-top: 5rem;
+}
+.profile .img_intro p {
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+.profile .img_intro .sec_intro {
+  font-size: 18px;
+  opacity: 0.7;
+}
+.profile .img_intro strong {
+  font-size: 28px;
+}
+.profile .img_intro img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.profile .img_intro h2 {
+  font-family: monospace;
+  font-size: 1.7rem;
+}
+.profile .logo {
+  font-family: "Aldrich", sans-serif;
+}
+.profile a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  color: #0077b6;
+}
+.profile .last-text h4 {
+  opacity: 0.6;
+  margin-top: 4rem;
+  font-size: 16px;
+}
+.profile .show_details button {
+  padding: 0 2rem;
+  color: #E57373;
+  background-color: #fff;
+  border: none;
+}
+
+footer {
+  font: 1rem "Courier New", sans-serif;
+  color: #6b8e23;
+  background-color: #fffff0;
+  line-height: 24px;
+}
+footer span {
+  font-family: "Aldrich", sans-serif;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+}
+footer a img {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  width: 34px;
+}
+
+@media (max-width: 576px) {
+  nav #logo {
+    margin-top: 1rem;
+  }
+  nav #name {
+    font-size: 10px;
+  }
+  nav #name span {
+    font-size: 20px;
+  }
+  nav button {
+    font-size: small;
+  }
+  main .up-col img {
+    margin-left: 10rem;
+    width: 200px;
+  }
+  main .up-col .mid-col div {
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+  }
+  main .up-col .mid-col strong {
+    font-size: 22px;
+  }
+  main .up-col .mid-col h2 {
+    font-size: 16px;
+  }
+  main .middle-col h2 {
+    margin-top: 2.5rem;
+    font-size: 17px;
+  }
+  main .middle-col h3 {
+    font-size: 16px;
+  }
+  main .middle-col h4 {
+    font-size: 14px;
+  }
+  main .end-col {
+    margin-top: 1rem;
+  }
+  main .end-col h3 {
+    font-size: 1em;
+  }
+  main .end-col a {
+    font-size: 10px;
+    align-self: center;
+  }
+  main .end-col .end-sec-col h4 {
+    font-size: 14px;
+  }
+  main .end-col .end-sec-col .product-container {
+    height: 260px;
+  }
+  main .end-col .end-sec-col .product-container .product-card p {
+    font-size: 12px;
+  }
+  main .end-col .end-sec-col .product-container .product-card .show-price {
+    margin: 1rem 0 0 0;
+  }
+  main .end-col .ex-trips p {
+    font-size: 12px;
+  }
+  main .end-col .ex-trips img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  main .end-col .ex-trips .text-mob {
+    margin-top: 5px;
+  }
+  .register {
+    margin: 3rem 0 1rem 0;
+  }
+  .register h2 {
+    font-size: 1rem;
+  }
+  .register form {
+    margin-top: 3rem;
+  }
+  .register form div p {
+    font-size: 10px;
+  }
+  .register form div input {
+    font-size: 1.2rem;
+  }
+  .register form div input::placeholder {
+    font-size: 13px;
+  }
+  .register form button {
+    font-size: small;
+    padding: 0 1.5rem;
+    color: #ffa726;
+    background-color: #fffff0;
+    border-color: #ffa726;
+  }
+  .register form h3 {
+    font-size: 1.3rem;
+  }
+  .register p {
+    margin: 1rem 0 1rem 1rem;
+    font-size: 10px;
+  }
+  .register .problem-text {
+    font-size: small;
+  }
+  .login {
+    margin-top: 4.5rem;
+  }
+  .login h2 {
+    font-size: 2rem;
+  }
+  .login div p {
+    font-size: 9px;
+  }
+  .login form .problem-text p {
+    font-size: 14px;
+    border-bottom: 2px solid;
+    color: #E57373;
+  }
+  .login form a {
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    align-items: center;
+    color: #d1c4e9;
+  }
+  .login form input {
+    font-size: 1.2rem;
+  }
+  .login form input::placeholder {
+    font-size: 13px;
+  }
+  .login form button {
+    font-size: small;
+    padding: 0 1.5rem;
+    color: #ffa726;
+    background-color: #fffff0;
+    border-color: #ffa726;
+  }
+  .central-trip {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .central-trip .mol-hid {
+    display: none;
+  }
+  .central-trip .day-n {
+    margin: -10px 4rem 0 0;
+  }
+  .central-trip .first-col-center h2 {
+    padding-top: 10rem;
+    font-size: 2rem;
+  }
+  .central-trip .first-col-center p {
+    font-size: 16px;
+  }
+  .central-trip .first-col-center div {
+    height: 740px;
+    animation: none;
+  }
+  .central-trip .sec-col-center {
+    margin: 4rem 0;
+    padding-right: 1rem;
+  }
+  .central-trip .third-col-center .beppu-center .beppu-center-intro {
+    padding-top: 1.5rem;
+    border: none;
+    background-image: url("https://i.ibb.co/V3HXHm1/red-beppu.png");
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 75px;
+  }
+  .central-trip .third-col-center .beppu-center .beppu-center-intro strong {
+    color: #fffff0;
+  }
+  .central-trip .fourth-col-center .nagasaki-center .nagasaki-center-intro {
+    padding-top: 1.5rem;
+    border: none;
+    background-image: url("https://i.ibb.co/cQxMdcP/nagasaki-bridge.png");
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 75px;
+  }
+  .central-trip .fourth-col-center .nagasaki-center .nagasaki-center-intro strong {
+    color: #fffff0;
+  }
+  .central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .first-collapseNagasaki img {
+    height: 200px;
+  }
+  .central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .sec-one-collapseNagasaki img {
+    margin-left: 12px;
+  }
+  .central-trip .fourth-col-center .nagasaki-center #collapseNagasaki .third-collapseNagasaki img {
+    height: 55px;
+  }
+  .central-trip .end-central h6 {
+    font-size: 12px;
+  }
+  .extra-trip {
+    line-height: 28px;
+  }
+  .extra-trip p {
+    font-size: 16px;
+  }
+  .extra-trip .mol-hid {
+    display: none;
+  }
+  .extra-trip .first-col-extra h3 {
+    font-size: 14px;
+  }
+  .extra-trip .first-col-extra img {
+    height: 680px;
+  }
+  .extra-trip .first-col-extra div div div .top-saga {
+    margin-left: 2.25rem;
+  }
+  .extra-trip .first-col-extra div div div .top-yakushima {
+    margin-left: 0.8rem;
+  }
+  .extra-trip .first-col-extra div div div .top-sec-miyama {
+    margin-left: 1.7rem;
+  }
+  .extra-trip .sec-col-extra {
+    margin: 7rem 0 0 0;
+  }
+  .extra-trip .sec-col-extra h4 {
+    font-size: 24px;
+  }
+  .extra-trip .sec-col-extra p {
+    font-size: 14px;
+  }
+  .extra-trip .yakushima-col-extra {
+    margin-bottom: 4rem;
+  }
+  .extra-trip .yakushima-col-extra h4 {
+    font-size: 18px;
+  }
+  .extra-trip .yakushima-col-extra h5 {
+    font-size: 16px;
+  }
+  .extra-trip .yakushima-col-extra .before-first img {
+    height: 70px;
+  }
+  .extra-trip .miyazaki-col-extra {
+    margin-bottom: 4.5rem;
+  }
+  .extra-trip .miyazaki-col-extra h4 {
+    font-size: 18px;
+  }
+  .extra-trip .miyazaki-col-extra h5 {
+    font-size: 16px;
+  }
+  .extra-trip .miyazaki-col-extra .before-first img {
+    height: 70px;
+  }
+  .extra-trip .miyama-col-extra {
+    margin-bottom: 4.5rem;
+  }
+  .extra-trip .miyama-col-extra h4 {
+    font-size: 18px;
+  }
+  .extra-trip .miyama-col-extra h5 {
+    font-size: 16px;
+  }
+  .extra-trip .miyama-col-extra .before-first img {
+    height: 70px;
+  }
+  .extra-trip .karatsu-col-extra {
+    margin-bottom: 4.5rem;
+  }
+  .extra-trip .karatsu-col-extra h4 {
+    font-size: 18px;
+  }
+  .extra-trip .karatsu-col-extra h5 {
+    font-size: 16px;
+  }
+  .extra-trip .karatsu-col-extra .before-first img {
+    height: 70px;
+  }
+  .extra-trip .saga-col-extra {
+    margin-bottom: 2rem;
+  }
+  .extra-trip .saga-col-extra h4 {
+    font-size: 18px;
+  }
+  .extra-trip .saga-col-extra h5 {
+    font-size: 16px;
+  }
+  .extra-trip .saga-col-extra .before-first img {
+    height: 70px;
+  }
+  .profile {
+    margin: 2.5rem 0 1rem 0;
+  }
+  .profile .mol-hid {
+    display: none;
+  }
+  .profile h2 {
+    font-size: 12px;
+  }
+  .profile .mol-hid {
+    display: none;
+  }
+  .profile .img_intro {
+    margin-top: 2rem;
+  }
+  .profile .img_intro p {
+    font-size: 14px;
+    line-height: 2rem;
+  }
+  .profile .img_intro h2 {
+    font-size: 12px;
+  }
+  .profile .img_intro strong {
+    font-size: 18px;
+  }
+  .profile .img_intro .sec_intro {
+    font-size: 10px;
+    margin: 1rem 0 2rem 0;
+  }
+  .profile .img_intro img {
+    margin-bottom: 4rem;
+  }
+  .profile .img_intro .sp_img {
+    margin-bottom: 2rem;
+  }
+  .profile .show_details h3 {
+    font-size: 1rem;
+  }
+  .profile .show_details h4 {
+    font-size: 22px;
+  }
+  .profile .show_details p {
+    padding-top: 6px;
+    font-size: 12px;
+  }
+  .profile .data_ana h2 {
+    font-size: 24px;
+  }
+  .profile .data_ana h3 {
+    font-size: 14px;
+  }
+  .profile .data_ana p {
+    font-size: 14px;
+  }
+  .profile .last-text {
+    margin-top: 4rem;
+  }
+  .profile .last-text .logout {
+    margin-top: 3.7rem;
+  }
+  .profile .last-text h4 {
+    font-size: 12px;
+  }
+  .profile a {
+    font-size: 10px;
+  }
+  .profile h4 {
+    font-size: 14px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  footer img {
+    width: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

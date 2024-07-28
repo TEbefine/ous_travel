@@ -1,0 +1,78 @@
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {%block
+main %}
+
+<div class="register container">
+  <div class="col-12">
+    <h2 class="text-center">
+      Sign Up & Save: Book Tours with <span style="color: #0077b6">O</span
+      ><span style="color: #6b8e23">U</span
+      ><span style="color: #ffa726">S</span>
+    </h2>
+  </div>
+  {% if problems %}
+  <div class="row">
+    <div class="col-sm-4 d-none d-sm-block"></div>
+    <p class="col-sm-4 col-11 text-center problem-text">{{ problems }}</p>
+    <div class="col-sm-4 col-1"></div>
+  </div>
+  {% endif %}
+  <form action="/register" method="post" class="text-center">
+    <div class="row">
+      <div class="col-sm-4 col-6">
+        <input name="username" placeholder="Create Your ID" type="text" />
+        <p>* Letters & Numbers Only</p>
+      </div>
+      <div class="col-sm-4 col-6">
+        <input
+          name="password"
+          placeholder="Create Your Password"
+          type="password"
+        />
+        <p>* Alphanumeric</p>
+      </div>
+      <div class="col-6 d-sm-none"></div>
+      <div class="col-sm-4 col-6">
+        <input
+          name="confirmation"
+          placeholder="Confirm Your Password"
+          type="password"
+        />
+        <p>* Re-enter Your Password</p>
+      </div>
+    </div>
+    <div class="row m-sm-5 my-5">
+      <h3 class="col-6">
+        Tell <span style="color: #0077b6">O</span
+        ><span style="color: #6b8e23">U</span
+        ><span style="color: #ffa726">S</span> your name
+      </h3>
+      <div class="col-6">
+        <input name="name" placeholder="Your Beautiful Name" type="text" />
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-4"></div>
+      <div class="col-sm-2 col-4">
+        <button type="submit"><strong>Register</strong></button>
+      </div>
+      <div class="col-sm-2 d-none d-sm-block">
+        <p class="explain-p text-start mt-2">
+          with <span style="color: #0077b6">O</span
+          ><span style="color: #6b8e23">U</span
+          ><span style="color: #ffa726">S</span>
+        </p>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </form>
+  <div class="row">
+    <div class="col-sm-3 d-none d-sm-block"></div>
+    <div class="col-sm-7 col-12" style="color: #ffa726">
+      <p>* This is the only information we will collect from you.</p>
+      <p>* We hope you enjoy exploring our website!</p>
+    </div>
+    <div class="col-sm-2 d-none d-sm-block"></div>
+  </div>
+</div>
+
+{% endblock %}

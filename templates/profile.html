@@ -1,0 +1,256 @@
+{% extends "layout.html" %} {% block title %} Profile {% endblock %} {% block
+main %}
+<section class="container profile">
+  {% with messages = get_flashed_messages() %} {% if messages %} {% for message
+  in messages %}
+  <h2 class="text-center">
+    <strong style="color: #d1c4e9">{{ message }}⍨</strong>
+  </h2>
+  {% endfor %} {% endif %} {% endwith %} {% if reserves %}
+  <div class="row">
+    <div class="col-12 img_intro">
+      <p class="mt-3 mb-5">
+        <span style="font-size: 2rem; opacity: 0.65">Y</span>our investment of
+        <strong>{{total}}</strong> with
+        <span style="color: #0077b6" class="logo">O</span
+        ><span style="color: #6b8e23" class="logo">U</span
+        ><span style="color: #ffa726" class="logo">S</span> unlocks a world of
+        extraordinary experiences. {% for reserve in reserves %}
+        {{reserve["phrase"]}} {% endfor %}
+      </p>
+      <img
+        class="mt-1 sp_img"
+        src="https://i.ibb.co/CwDN4gr/sakura-1.jpg"
+        alt="Plum Blossom"
+      />
+    </div>
+  </div>
+  <div class="row show_details mt-sm-3 mt-0">
+    <div class="col-1 d-none d-sm-block"></div>
+    <div class="col-sm-11 col-12 my-sm-4 mb-3">
+      <h3 style="opacity: 0.6"><strong>#Upcoming Trips</strong></h3>
+    </div>
+    {% for reserve in reserves %}
+    <div class="row mb-2">
+      <div class="col-sm-2 col-1"></div>
+      <div class="col-sm-3 col-5 mb-sm-3">
+        <h4><strong>{{reserve["region"]["region"]}}</strong></h4>
+      </div>
+      <div class="col-2 mt-sm-2">
+        <p style="color: #d1c4e9"><span class="mol-hid">•</span> Pending</p>
+      </div>
+      <div class="col-sm-4 col-3 text-end mt-sm-2">
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#{{reserve['region']['region']}}"
+        >
+          <span class="d-none d-sm-block">Cancelled</span
+          ><span class="d-sm-none">x</span>
+        </button>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="{{reserve['region']['region']}}"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="mt-2">
+              <strong>Trip Cancellation Notification</strong>
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row my-4">
+              <div class="col-12">
+                <p>
+                  Please confirm if you wish to proceed with the cancellation.
+                </p>
+              </div>
+            </div>
+            <form action="/cancelled" method="post">
+              <div class="row text-center">
+                <div class="col-6">
+                  <button
+                    type="submit"
+                    name="id"
+                    value="{{reserve['id_trip']}}"
+                  >
+                    <strong style="color: #6b8e23">YES</strong>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <strong style="opacity: 0.4">NO</strong>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endModal -->
+
+    {% endfor %}
+  </div>
+  {% elif num %}
+  <div class="row data_ana">
+    <div class="col-12 text-center">
+      <h2>
+        <strong>
+          Data analysis of <span style="color: #0077b6" class="logo">O</span
+          ><span style="color: #6b8e23" class="logo">U</span
+          ><span style="color: #ffa726" class="logo">S</span>
+        </strong>
+      </h2>
+    </div>
+    <div class="col-12 mt-4 mb-4">
+      <h3 style="opacity: 0.3"><strong>#Number of Users</strong></h3>
+    </div>
+    <div class="col-1 d-none d-sm-block"></div>
+    <div class="col-sm-8 col-10">
+      <p><strong>People have signed up to use the website.</strong></p>
+    </div>
+    <div class="col-sm-2 col-2">
+      <p>{{num}}</p>
+    </div>
+    <div class="col-1 d-none d-sm-block"></div>
+    <div class="col-12 mt-4 mb-4">
+      <h3 style="opacity: 0.3"><strong>#Top most Booked Trips</strong></h3>
+    </div>
+    {% for rating in ratings %}
+    <div class="col-sm-1 col-2 ps-4 text-end">{{ rating['rating'] }}</div>
+    <div class="col-sm-11 col-10">
+      <p><strong>{{ rating['region'] }}</strong></p>
+    </div>
+    {% endfor %}
+    <div class="col-1"></div>
+    <div class="col-12 mt-4 mb-4">
+      <h3 style="opacity: 0.3"><strong>#People who Booked</strong></h3>
+    </div>
+    {% for user in users %}
+    <div class="col-2 text-end">{{user["name"]}}</div>
+    <div class="col-sm-9 col-10">
+      <p><strong>: {{user["region"]}}</strong></p>
+    </div>
+    <div class="col-1 d-none d-sm-block"></div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="row">
+    <div class="col-12 img_intro">
+      <h2 class="mt-sm-4 mb-sm-4">
+        Hi <strong style="color: #0077b6">{{name}}</strong>'s it time to<span
+          class="mol-hid"
+        >
+          refresh and</span
+        >
+        recharge?
+      </h2>
+      <h2 class="text-end mb-sm-5 sec_intro">
+        Let
+        <span style="color: #0077b6" class="logo">O</span
+        ><span style="color: #6b8e23" class="logo">U</span
+        ><span style="color: #ffa726" class="logo">S</span> help you plan the
+        ultimate escape.
+      </h2>
+      <img src="https://i.ibb.co/CwDN4gr/sakura-1.jpg" alt="Plum Blossom" />
+    </div>
+  </div>
+  <div class="row mt-sm-5">
+    <div class="col-sm-10 col-12">
+      <h4>
+        Craving a week-long escape?
+        <span class="mol-hid"
+          >Discover your perfect adventure with
+          <span style="color: #0077b6" class="logo">O</span
+          ><span style="color: #6b8e23" class="logo">U</span
+          ><span style="color: #ffa726" class="logo">S</span>.</span
+        >
+      </h4>
+    </div>
+    <div class="col-sm-2 col-12 text-end">
+      <a href="/central_trip"
+        >Central Trip
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-navigation"
+        >
+          <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="row my-sm-5">
+    <div class="col-sm-10 col-12">
+      <h4>
+        <span class="mol-hid">Discover endless possibilities. </span>Explore our
+        extra trips.
+      </h4>
+    </div>
+    <div class="col-sm-2 col-12 text-end">
+      <a href="/extra_trip"
+        >Extra Trip
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-navigation"
+        >
+          <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+        </svg>
+      </a>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="row text-center mb-sm-5 last-text">
+    <div class="col-sm-12 col-9">
+      <h4>
+        <strong>
+          Enjoy your time on the
+          <span style="color: #0077b6" class="logo">O</span
+          ><span style="color: #6b8e23" class="logo">U</span
+          ><span style="color: #ffa726" class="logo">S</span> website.
+        </strong>
+      </h4>
+    </div>
+    <div class="col-3 logout d-sm-none">
+      <a href="/logout" style="color: #d1c4e9; font-size: 16px">
+        <strong>Log Out</strong>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

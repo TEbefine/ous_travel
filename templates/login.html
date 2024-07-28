@@ -1,0 +1,55 @@
+{% extends "layout.html" %} {% block title %} Log In {% endblock %} {% block
+main %}
+<div class="container login text-center">
+  <h2>
+    Welcome Back! Login to <span style="color: #0077b6">O</span
+    ><span style="color: #6b8e23">U</span><span style="color: #ffa726">S</span>
+  </h2>
+  <div class="row">
+    <div class="col-sm-2 col-2"></div>
+    <div class="col-sm-8 col-8">
+      <p>
+        Travel with <span style="color: #0077b6">O</span
+        ><span style="color: #6b8e23">U</span
+        ><span style="color: #ffa726">S</span>: Experience the journey, not just
+        the destination.
+      </p>
+    </div>
+    <div class="col-sm-2 col-2"></div>
+  </div>
+  <form action="/login" method="post" class="text-center">
+    <div class="row">
+      <div class="col-sm-2 col-2"></div>
+      <div class="col-sm-4 col-8">
+        <input name="username" placeholder="ID" type="text" />
+      </div>
+      <div class="col-2 d-sm-none"></div>
+      <div class="col-2 d-sm-none"></div>
+      <div class="col-sm-4 col-8">
+        <input name="password" placeholder="Your Password" type="password" />
+      </div>
+      <div class="col-sm-2 col-2"></div>
+    </div>
+    <div class="row">
+      {% if problems %}
+      <div class="col-2"></div>
+      <div class="col-sm-4 col-8 text-center problem-text">
+        <p>{{ problems }}</p>
+      </div>
+      <div class="col-2 d-sm-none"></div>
+      {% else %}
+      <div class="col-sm-6 d-none d-sm-block text-end">
+        <p>Your journey will start here,</p>
+      </div>
+      {% endif %}
+      <div class="col-sm-4 col-6 text-center">
+        <button type="submit"><strong>LogIn</strong></button>
+      </div>
+      <div class="col-6 d-sm-none mt-4 pt-1">
+        <a href="/register"><strong>Register</strong></a>
+      </div>
+      <div class="col-sm-2 d-none d-sm-block"></div>
+    </div>
+  </form>
+</div>
+{% endblock %}

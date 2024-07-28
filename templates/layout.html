@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- https://favicon.io/emoji-favicons/Hot Springs/ -->
+    <link href="../static/favicon.ico" rel="icon" />
+    <title>OUS Tour: {% block title %}{% endblock %}</title>
+    <!-- Link stylesheet use SCSS -->
+    <link href="/static/styles.css" rel="stylesheet" />
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link font Aldrich -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand m-2" href="/">
+          <h2 id="logo" class="mt-3">
+            <span style="color: #0077b6">O</span>
+            <span style="color: #6b8e23">U</span>
+            <span style="color: #ffa726">S</span>
+          </h2>
+        </a>
+        {% if session["user_id"] %}
+        <div class="navbar-nav mt-sm-2 mt-3">
+          <div class="nav-item d-none d-sm-block">
+            <a
+              class="nav-link pt-2 me-3 mt-3 logout"
+              href="/logout"
+              style="color: #d1c4e9"
+            >
+              <strong>Log Out</strong>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a
+              class="nav-link me-sm-4"
+              href="/profile"
+              style="color: #6b8e23"
+              id="name"
+            >
+              <strong>Hi <span>{{ name }}</span></strong>
+            </a>
+          </div>
+        </div>
+        {% else %}
+        <div class="navbar-nav ms-auto mt-2">
+          <div class="nav-item d-none d-sm-block">
+            <a
+              class="nav-link pt-2 me-3"
+              href="/register"
+              style="color: #d1c4e9"
+            >
+              <strong>Register</strong>
+            </a>
+          </div>
+          <div class="nav-item me-sm-4">
+            <button>
+              <a class="nav-link" href="/login" style="color: #6b8e23">
+                <strong>Log In</strong>
+              </a>
+            </button>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </nav>
+    {% block main %}{% endblock %}
+
+    <!----------------------- floor area ----------------------->
+    <footer class="container-fluid p-sm-4 pt-3 ps-3">
+      <div class="row">
+        <div class="col-sm-1 d-none d-sm-block"></div>
+        <p class="col-sm-10 col-12 ms-sm-4 mt-sm-3 d-none d-sm-block">
+          * This website serves as <strong>the final project for CS50x</strong>,
+          a course offered by Harvard University. It was created by " TEERA
+          THONGBAI ". <br />However, if you decide to book a tour, please note
+          that your departure date may fall within the next two years.
+        </p>
+        <div class="col-sm-1 d-none d-sm-block"></div>
+      </div>
+      <div class="row mt-sm-3">
+        <div class="col-sm-1 d-none d-sm-block"></div>
+        <p class="col-sm-10 col-12 ms-sm-4">
+          © 2024 <span style="color: #0077b6">O</span
+          ><span style="color: #6b8e23">U</span
+          ><span style="color: #ffa726">S</span>. All Rights Reserved ||
+          <br class="d-sm-none d-block" />** A <strong>Big Thanks</strong> to
+          the <strong>CS50x team!</strong> **
+        </p>
+        <div class="col-sm-1 d-none d-sm-block"></div>
+      </div>
+      <div class="row mt-sm-3">
+        <div class="col-sm-1 d-none d-sm-block"></div>
+        <div class="col-sm-10 col-12 ms-sm-4">
+          <p>
+            If you'd like to get in touch, please connect with me via the
+            <a href="https://www.linkedin.com/in/teera-thongbai-986a3a27b/"
+              ><img
+                src="https://i.ibb.co/mHthNTz/linkedin.png"
+                alt="linkedin logo"
+              />
+              <strong>Teera Thongbai</strong></a
+            >
+            profile.
+          </p>
+        </div>
+        <div class="col-sm-1 d-none d-sm-block"></div>
+      </div>
+    </footer>
+
+    <script src="/static/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
